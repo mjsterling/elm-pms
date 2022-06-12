@@ -1,0 +1,22 @@
+export const BookingSchema = {
+  name: 'Booking',
+  primaryKey: '_id',
+  properties: {
+    _id: 'objectId',
+    _partition: 'string',
+    createdAt: 'date',
+    updatedAt: 'date',
+    contactFirstName: 'string?',
+    contactLastName: 'string?',
+    contactEmail: 'string?',
+    contactPhone: 'string?',
+    confirmed: 'bool',
+    numAdults: 'int',
+    numChildren: 'int',
+    pets: 'bool',
+    petDesc: 'string?',
+    startDate: 'date',
+    endDate: 'date',
+    room: 'Room?',
+  },
+} as const;
